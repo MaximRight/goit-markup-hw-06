@@ -989,6 +989,10 @@ opacity: 1;
 	letter-spacing: 0.01em;
 }
 
+.form-input:hover {
+	border: 1px solid rgba(33, 33, 33, 0.7);
+}
+
 /* .input-field .form-label {
 } */
 
@@ -1079,6 +1083,10 @@ opacity: 1;
 
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
+}
+
+.comment:hover {
+	border: 1px solid rgba(33, 33, 33, 0.7);
 }
 
 .comment:focus {
@@ -1182,6 +1190,12 @@ opacity: 1;
 .form-text {
 	/* display: inline-block; */
 	margin-left: 7px;
+}
+
+.form-text:hover,
+.form-text:hover .link-checkbox,
+.link-checkbox:hover {
+	color: rgba(33, 33, 33, 0.9);
 }
 
 .link-checkbox {
