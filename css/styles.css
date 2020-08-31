@@ -1470,7 +1470,17 @@ opacity: 1;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 
+	color: white;
 	background-color: var(--footer-color);
+}
+
+.form-subscribe .email:hover {
+	border: 1px solid white;
+}
+
+.form-subscribe .email:focus {
+	outline: transparent;
+	border: 1px solid var(--accent-color);
 }
 
 .form-subscribe .button {
