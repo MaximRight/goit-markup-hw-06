@@ -16,13 +16,23 @@
 	</head>
 	<body>
 		<!-- Тестовые кнопки -->
-		<nav>
-			<ul class="header links">
-				<li class="item"><a href="">Студия </a></li>
-				<li class="item"><a href="">Портфолио</a></li>
-				<li class="item"><a href="">Настройки</a></li>
-				<li class="item"><a href="">Инфа</a></li>
-			</ul>
-		</nav>
+		<input type="checkbox" checked />
+		<input type="checkbox" />
+		<input type="checkbox" />
+		<button class="button-submit">Кнопка</button>
 	</body>
+
+	<script>
+		const inputs = document.querySelectorAll("input[type=checkbox]")
+		const button = document.querySelector(".button-submit")
+
+		function check() {
+			button.disabled = true
+			inputs.forEach(input => {
+				if (input.checked) button.disabled = false
+			})
+		}
+
+		inputs.forEach(input => input.addEventListener("change", check))
+	</script>
 </html>

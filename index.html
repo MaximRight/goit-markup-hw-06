@@ -29,7 +29,9 @@
 			<div class="nav-container">
 				<nav class="navbar">
 					<!-- Логотип, всегда ссылка -->
-					<a href="./index.html" class="logo"> Web<span class="logo header">Studio</span> </a>
+					<a href="./index.html" class="logo">
+						Web<span class="logo header">Studio</span>
+					</a>
 
 					<!-- Ссылки на другие страницы или разделы текущей -->
 					<ul class="site-nav">
@@ -80,7 +82,9 @@
 					для вашего бизнеса
 				</h1>
 				<!-- <button type="button">Заказать Услугу</button> -->
-				<button type="button" class="btn" data-modal-open> Заказать Услугу </button>
+				<button type="button" class="btn" data-modal-open>
+					Заказать Услугу
+				</button>
 
 				<!-- <button type="button">Заказать Услугу</button> -->
 			</section>
@@ -94,19 +98,31 @@
 						<!-- тут можно было бы поставить к item .icon-radar -->
 						<li class="item">
 							<h3 class="title"> Внимание к деталям </h3>
-							<p> Идейные соображения, а также начало повседневной работы по формированию позиции. </p>
+							<p>
+								Идейные соображения, а также начало повседневной работы по
+								формированию позиции.
+							</p>
 						</li>
 						<li class="item">
 							<h3 class="title"> Пунктуальность </h3>
-							<p> Задача организации, в особенности же рамки и место обучения кадров влечет за собой. </p>
+							<p>
+								Задача организации, в особенности же рамки и место обучения
+								кадров влечет за собой.
+							</p>
 						</li>
 						<li class="item">
 							<h3 class="title">Планирование</h3>
-							<p> Равным образом консультация с широким активом в значительной степени обуславливает. </p>
+							<p>
+								Равным образом консультация с широким активом в значительной
+								степени обуславливает.
+							</p>
 						</li>
 						<li class="item">
 							<h3 class="title"> Современные технологии </h3>
-							<p> Значимость этих проблем настолько очевидна, что реализация плановых заданий. </p>
+							<p>
+								Значимость этих проблем настолько очевидна, что реализация
+								плановых заданий.
+							</p>
 						</li>
 					</ul>
 				</div>
@@ -116,7 +132,13 @@
 					<ul class="images-wedo">
 						<li class="item">
 							<div class="thumb">
-								<img src="./images/code.jpg" alt="Пишем код" width="370" height="294" class="image" />
+								<img
+									src="./images/code.jpg"
+									alt="Пишем код"
+									width="370"
+									height="294"
+									class="image"
+								/>
 
 								<h3 class="title"> десктопные приложения </h3>
 							</div>
@@ -135,7 +157,13 @@
 						</li>
 						<li class="item">
 							<div class="thumb">
-								<img src="./images/color.jpg" alt="Подбираем цветовое решение" width="370" height="294" class="image" />
+								<img
+									src="./images/color.jpg"
+									alt="Подбираем цветовое решение"
+									width="370"
+									height="294"
+									class="image"
+								/>
 								<h3 class="title"> Дизайнерские решения </h3>
 							</div>
 						</li>
@@ -171,7 +199,12 @@
 
 					<ul class="team-members">
 						<li class="item">
-							<img src="./images/igor.jpg" width="270" height="260" alt="Игорь Демьяненко" />
+							<img
+								src="./images/igor.jpg"
+								width="270"
+								height="260"
+								alt="Игорь Демьяненко"
+							/>
 							<h3 class="title"> Игорь Демьяненко </h3>
 							<p class="text" lang="en"> Product Designer </p>
 
@@ -207,7 +240,12 @@
 							</ul>
 						</li>
 						<li class="item">
-							<img src="./images/olga.jpg" width="270" height="260" alt="Ольга Репина" />
+							<img
+								src="./images/olga.jpg"
+								width="270"
+								height="260"
+								alt="Ольга Репина"
+							/>
 							<h3 class="title">Ольга Репина</h3>
 							<p class="text" lang="en"> Frontend Developer </p>
 
@@ -243,7 +281,12 @@
 							</ul>
 						</li>
 						<li class="item">
-							<img src="./images/kolya.jpg" width="270" height="260" alt="Николай Тарасов" />
+							<img
+								src="./images/kolya.jpg"
+								width="270"
+								height="260"
+								alt="Николай Тарасов"
+							/>
 							<h3 class="title"> Николай Тарасов </h3>
 							<p class="text" lang="en"> Marketing </p>
 
@@ -279,7 +322,12 @@
 							</ul>
 						</li>
 						<li class="item">
-							<img src="./images/misha.jpg" width="270" height="260" alt="Михаил Ермаков" />
+							<img
+								src="./images/misha.jpg"
+								width="270"
+								height="260"
+								alt="Михаил Ермаков"
+							/>
 							<h3 class="title"> Михаил Ермаков </h3>
 							<p class="text" lang="en"> UI Designer </p>
 
@@ -377,40 +425,60 @@
 				</div>
 			</section>
 
-			<!-- -------------!!!!!!!!!MODAL WINDOW!!!!!!!!!------ -->
-			<div class="backdrop" data-modal>
+			<!-- -------------!!!!!!!!!MODAL WINDOW AND FORM WINDOW!!!!!!!!!------ -->
+			<div class="backdrop is-hidden" data-modal>
 				<div class="modal">
 					<h3 class="title">Оставьте свои данные мы вам перезвоним</h3>
-					<form class="form js-speaker-form">
-						<ul>
-							<li class="form-field">
-								<label for="name">Имя</label>
-								<div class="input-field">
-									<svg class="icon-form" width="18px" height="18px">
-										<use href="./images/sprite.svg#icon-modal-name"></use>
-									</svg>
-									<input type="text" name="user-name" id="name" class="input-icon" autofocus />
-								</div>
-							</li>
-							<li class="form-field">
-								<label for="tel">Телефон</label>
-								<div class="input-field"
-									><svg class="icon-form" width="18px" height="18px">
-										<use href="./images/sprite.svg#icon-modal-tel"></use>
-									</svg>
-									<input type="tel" name="user-tel" id="tel" class="input-icon"
-								/></div>
-							</li>
-							<li class="form-field">
-								<label for="mail">Почта</label>
-								<div class="input-field"
-									><svg class="icon-form" width="18px" height="18px">
-										<use href="./images/sprite.svg#icon-modal-email"></use>
-									</svg>
-									<input type="email" name="user-mail" id="mail" class="input-icon"
-								/></div>
-							</li>
-						</ul>
+					<!-- FORM WINDOW!!! -->
+					<form class="form js-speaker-form" autocomplete="off">
+						<label class="input-field">
+							<span class="form-label"> Имя</span>
+							<div class="test-field">
+								<input
+									type="text"
+									name="user-name"
+									id="name"
+									class="form-input"
+									autofocus
+									placeholder=" "
+								/>
+								<svg class="icon-form" width="18px" height="18px">
+									<use href="./images/sprite.svg#icon-modal-name"></use>
+								</svg>
+							</div>
+						</label>
+
+						<label class="input-field">
+							<span class="form-label">Телефон</span>
+							<div class="test-field">
+								<input
+									type="tel"
+									name="user-tel"
+									id="tel"
+									class="form-input"
+									placeholder=" "
+								/>
+								<svg class="icon-form" width="18px" height="18px">
+									<use href="./images/sprite.svg#icon-modal-tel"></use>
+								</svg>
+							</div>
+						</label>
+
+						<label class="input-field">
+							<span class="form-label">Почта</span>
+							<div class="test-field">
+								<input
+									type="email"
+									name="user-mail"
+									id="mail"
+									class="form-input"
+									placeholder=" "
+								/>
+								<svg class="icon-form" width="18px" height="18px">
+									<use href="./images/sprite.svg#icon-modal-email"></use>
+								</svg>
+							</div>
+						</label>
 
 						<!-- <div role="group">
 							<h2 class="group-title">Тема доклада</h2>
@@ -432,15 +500,31 @@
 							<h2 class="group-title">Уровень вашей экспертизы</h2>
 							<ul class="experience options">
 								<li
-									><input type="radio" name="experience" value="junior" id="junior" checked />
+									><input
+										type="radio"
+										name="experience"
+										value="junior"
+										id="junior"
+										checked
+									/>
 									<label for="junior">Junior</label></li
 								>
 								<li
-									><input type="radio" name="experience" value="middle" id="middle" />
+									><input
+										type="radio"
+										name="experience"
+										value="middle"
+										id="middle"
+									/>
 									<label for="middle">Middle</label></li
 								>
 								<li
-									><input type="radio" name="experience" value="senior" id="senior" />
+									><input
+										type="radio"
+										name="experience"
+										value="senior"
+										id="senior"
+									/>
 									<label for="senior">Senior</label></li
 								>
 							</ul>
@@ -461,18 +545,30 @@
 						<!-- <label for="pdf">Загрузите копию доклада в PDF</label>
 						<input type="file" name="pdf" id="pdf" /> -->
 
-						<div class="form-field">
-							<label for="comment">Комментарий</label>
-							<textarea class="comment" name="" id="comment" rows="7" placeholder="Введите текст"></textarea>
-						</div>
+						<label class="comment-field">
+							<span class="form-label">Комментарий</span>
+							<textarea
+								class="comment"
+								name=""
+								id="comment"
+								rows="7"
+								placeholder="Введите текст"
+							></textarea>
+						</label>
 
-						<div class="form-field checkbox">
-							<input type="checkbox" name="" id="policy" />
-							<label for="policy" class="label-checkbox"
-								><div class="form-text">Соглашаюсь с рассылкой и принимаю</div>
-								<a href="" class="link-checkbox">Условия договора</a></label
-							>
-						</div>
+						<label class="label-checkbox">
+							<input
+								type="checkbox"
+								name="policy"
+								value="agreement"
+								class="checkbox"
+							/>
+							<span class="icon"></span>
+							<span class="form-text"
+								>Соглашаюсь с рассылкой и принимаю
+								<a href="" class="link-checkbox">Условия договора</a>
+							</span>
+						</label>
 
 						<button type="submit" class="button-submit">Отправить</button>
 					</form>
@@ -501,7 +597,9 @@
 
 						<ul>
 							<li class="link-footer">
-								<a href="mailto:info@example.com" class="title">info@example.com</a>
+								<a href="mailto:info@example.com" class="title"
+									>info@example.com</a
+								>
 							</li>
 
 							<li class="link-footer">
@@ -536,7 +634,13 @@
 
 					<form class="form-subscribe">
 						<label for="email"></label>
-						<input type="email" name="user-mail" id="email" class="email" placeholder="E-mail" />
+						<input
+							type="email"
+							name="user-mail"
+							id="email"
+							class="email"
+							placeholder="E-mail"
+						/>
 
 						<button type="submit" class="button"
 							>Подписаться
@@ -552,14 +656,32 @@
 		<script src="./js/modal.js"></script>
 		<script>
 			;(() => {
-				document.querySelector(".js-speaker-form").addEventListener("submit", e => {
-					e.preventDefault()
+				document
+					.querySelector(".js-speaker-form")
+					.addEventListener("submit", e => {
+						e.preventDefault()
 
-					new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`))
+						new FormData(e.currentTarget).forEach((value, name) =>
+							console.log(`${name}: ${value}`),
+						)
 
-					e.currentTarget.reset()
-				})
+						e.currentTarget.reset()
+					})
 			})()
+		</script>
+
+		<script>
+			const inputs = document.querySelectorAll("input[type=checkbox]")
+			const button = document.querySelector(".button-submit")
+
+			function check() {
+				button.disabled = true
+				inputs.forEach(input => {
+					if (input.checked) button.disabled = false
+				})
+			}
+
+			inputs.forEach(input => input.addEventListener("change", check))
 		</script>
 	</body>
 </html>
