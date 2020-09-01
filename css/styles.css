@@ -950,6 +950,7 @@ opacity: 1;
 
 .input-field {
 	display: inline-block;
+	position: relative;
 	/* flex-direction: column; */
 
 	/* position: relative; */
@@ -1013,6 +1014,8 @@ opacity: 1;
 .input-field .icon-form {
 	position: absolute;
 	top: 50%;
+	/* top: 0; */
+	/* left: 0; */
 	left: 12px;
 
 	/* top: 13.33px; */

@@ -47,7 +47,7 @@
 					</ul>
 				</nav>
 
-				<!--------------- CONTACTS NAV!!!! -->
+				<!-- CONTACTS NAV!!!! -->
 				<!-- Контактные Данные в шапке, это не нав, потому что не ссылки на секции -->
 				<!-- <div class="contacts-container"> -->
 				<ul class="contacts-nav list">
@@ -425,60 +425,59 @@
 				</div>
 			</section>
 
-			<!-- -------------!!!!!!!!!MODAL WINDOW AND FORM WINDOW!!!!!!!!!------ -->
+			<!-- !!!!!!!!!MODAL WINDOW AND FORM WINDOW!!!!!!!!! -->
 			<div class="backdrop is-hidden" data-modal>
 				<div class="modal">
 					<h3 class="title">Оставьте свои данные мы вам перезвоним</h3>
 					<!-- FORM WINDOW!!! -->
 					<form class="form js-speaker-form" autocomplete="off">
-						<label class="input-field">
-							<span class="form-label"> Имя</span>
-							<div class="test-field">
-								<input
-									type="text"
-									name="user-name"
-									id="name"
-									class="form-input"
-									autofocus
-									placeholder=" "
-								/>
-								<svg class="icon-form" width="18px" height="18px">
-									<use href="./images/sprite.svg#icon-modal-name"></use>
-								</svg>
-							</div>
-						</label>
+						<ul>
+							<li
+								><span class="form-label"> Имя</span>
+								<label class="input-field">
+									<input
+										type="text"
+										name="user-name"
+										id="name"
+										class="form-input"
+										autofocus
+										placeholder=" "
+									/>
+									<svg class="icon-form" width="18px" height="18px">
+										<use href="./images/sprite.svg#icon-modal-name"></use>
+									</svg> </label
+							></li>
 
-						<label class="input-field">
-							<span class="form-label">Телефон</span>
-							<div class="test-field">
-								<input
-									type="tel"
-									name="user-tel"
-									id="tel"
-									class="form-input"
-									placeholder=" "
-								/>
-								<svg class="icon-form" width="18px" height="18px">
-									<use href="./images/sprite.svg#icon-modal-tel"></use>
-								</svg>
-							</div>
-						</label>
+							<li
+								><span class="form-label">Телефон</span>
+								<label class="input-field">
+									<input
+										type="tel"
+										name="user-tel"
+										id="tel"
+										class="form-input"
+										placeholder=" "
+									/>
+									<svg class="icon-form" width="18px" height="18px">
+										<use href="./images/sprite.svg#icon-modal-tel"></use>
+									</svg> </label
+							></li>
 
-						<label class="input-field">
-							<span class="form-label">Почта</span>
-							<div class="test-field">
-								<input
-									type="email"
-									name="user-mail"
-									id="mail"
-									class="form-input"
-									placeholder=" "
-								/>
-								<svg class="icon-form" width="18px" height="18px">
-									<use href="./images/sprite.svg#icon-modal-email"></use>
-								</svg>
-							</div>
-						</label>
+							<li
+								><span class="form-label">Почта</span>
+								<label class="input-field">
+									<input
+										type="email"
+										name="user-mail"
+										id="mail"
+										class="form-input"
+										placeholder=" "
+									/>
+									<svg class="icon-form" width="18px" height="18px">
+										<use href="./images/sprite.svg#icon-modal-email"></use>
+									</svg> </label
+							></li>
+						</ul>
 
 						<!-- <div role="group">
 							<h2 class="group-title">Тема доклада</h2>
@@ -549,7 +548,7 @@
 							<span class="form-label">Комментарий</span>
 							<textarea
 								class="comment"
-								name=""
+								name="comment"
 								id="comment"
 								rows="7"
 								placeholder="Введите текст"
