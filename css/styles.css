@@ -40,6 +40,12 @@ body {
 	padding-top: 0px;
 }
 
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
 /* Утилиты, это сброс маркеров для всех списков вообще */
 ul {
 	margin: 0px;
@@ -378,6 +384,7 @@ opacity: 1;
 	background-size: 70px;
 	background-repeat: no-repeat;
 	background-position: center;
+	border-radius: 4px;
 }
 .feature-list .item:nth-child(1)::before {
 	background-image: url(../images/feature1.svg);
@@ -526,6 +533,10 @@ opacity: 1;
 	height: 428px;
 	/* outline: 1px solid tomato; */
 	text-align: center;
+
+	border-radius: 0px 0px 4px 4px;
+	/* border-bottom-right-radius: 4px; */
+	/* border-bottom-left-radius: 4px; */
 }
 
 .team-members > .item + .item {
@@ -721,7 +732,11 @@ opacity: 1;
 
 /* Portfolio */
 
-.portfolio-list img {
+/* .portfolio-list img {
+	display: block;
+} */
+
+.portfolio-list a {
 	display: block;
 }
 
@@ -738,6 +753,12 @@ opacity: 1;
 
 	/* рагульный вариант */
 	/* justify-content: space-between; */
+}
+
+.thumb {
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	/* overflow: hidden; */
 }
 
 /* calc (100% - кол-во марджинов в строке * значение марджина / количество элементов в строке) */
@@ -759,6 +780,9 @@ opacity: 1;
 	/* width: 370px; */
 	/* max-height: 404px; */
 	/* background-color: tomato; */
+
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 
 	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -789,6 +813,8 @@ opacity: 1;
 	padding: 20px 24px;
 	border: 1px solid var(--folio-border);
 	border-top: 0px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 
 .portfolio-links .thumb {
@@ -842,6 +868,10 @@ opacity: 1;
 .portfolio-links:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 		1px 4px 6px rgba(0, 0, 0, 0.16);
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 }
 
 .portfolio-links .thumb:hover::before,
@@ -1367,7 +1397,7 @@ opacity: 1;
 .wrapper {
 	display: flex;
 	align-items: baseline;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 
 	margin-left: auto;
 	margin-right: auto;
@@ -1380,8 +1410,8 @@ opacity: 1;
 	/* outline: 2px solid tomato; */
 }
 
-.container-footer {
-	min-width: 231px;
+.container-footer.address {
+	width: 231px;
 	margin-left: 0px;
 	margin-right: 70px;
 	/* padding-top: 60px; */
@@ -1446,13 +1476,17 @@ opacity: 1;
 	letter-spacing: 0.03em;
 }
 
+.list-footer {
+	display: flex;
+}
+
 /* .list-footer.links {
 	display: inline-flex;
 	border: 1px solid black;
 } */
 
 .list-footer .item {
-	display: inline-flex;
+	display: flex;
 	/* border: 1px solid black; */
 }
 
