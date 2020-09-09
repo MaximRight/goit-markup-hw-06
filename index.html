@@ -22,7 +22,7 @@
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 
-	<body>
+	<body class="body">
 		<!-- Шапка сайта -->
 		<header class="page-header">
 			<!-- Нав - это всегда про ссылки на секции этой или других страниц -->
@@ -30,7 +30,7 @@
 				<nav class="navbar">
 					<!-- Логотип, всегда ссылка -->
 					<a href="./index.html" class="logo">
-						Web<span class="logo header">Studio</span>
+						Web<span class="logo-header">Studio</span>
 					</a>
 
 					<!-- Ссылки на другие страницы или разделы текущей -->
@@ -126,7 +126,10 @@
 						</li>
 					</ul>
 				</div>
+			</section>
 
+			<!-- СЕКЦИЯ ЧЕМ ЗАНИМАЕМСЯ -->
+			<section class="section expertise no-top-padding">
 				<div class="container">
 					<h2 class="section-title"> Чем мы занимаемся </h2>
 					<ul class="images-wedo">
@@ -169,28 +172,7 @@
 						</li>
 					</ul>
 				</div>
-				<!-- </div> -->
 			</section>
-
-			<!-- Чем Занимаемся -->
-			<!-- <section class="section wedo">
-				<div class="container">
-					<h2 class="section-title">Чем мы занимаемся</h2>
-					<ul>
-						<li>
-							<img src="./images/code.jpg" alt="Пишем код" width="370" height="294" />
-						</li>
-						<li>
-							<img src="./images/adapt.jpg" alt="Адаптируем под смартфоны и планшеты" width="370" height="294" />
-						</li>
-						<li>
-							<img src="./images/color.jpg" alt="Подбираем цветовое решение" width="370" height="294" />
-						</li>
-					</ul>
-				</div>
-			</section> -->
-
-			<!-- !!!!!!если набрать a.cool-teg, ты тегу сразу дается класс!! -->
 
 			<!-- НАША КОМАНДА TEAM  -->
 			<section class="section team">
@@ -599,7 +581,7 @@
 					</a>
 
 					<address class="address">
-						<span class="location"> г. Киев, пр-т Леси Украинки, 26 </span>
+						<p class="location"> г. Киев, пр-т Леси Украинки, 26 </p>
 
 						<ul>
 							<li class="link-footer">
@@ -617,10 +599,10 @@
 
 				<!-- FOOTER JOIN US  -->
 				<div class="container-footer join-us">
-					<h3 class="title-footer"> присоединяйтесь </h3>
+					<b class="title-footer"> присоединяйтесь </b>
 					<ul class="list-footer">
 						<li class="item">
-							<a href="./index.html" class="link"></a>
+							<a href="##" class="link"></a>
 						</li>
 						<li class="item">
 							<a href="##" class="link"></a>
@@ -636,7 +618,7 @@
 
 				<!-- FOOTER SUBSCRIBE!!! -->
 				<div class="container-subscribe">
-					<h3 class="title-footer">подпишитесь на рассылку</h3>
+					<b class="title-footer">подпишитесь на рассылку</b>
 
 					<form class="form-subscribe">
 						<label for="email"></label>
@@ -650,16 +632,19 @@
 
 						<button type="submit" class="button"
 							>Подписаться
-							<svg width="24" height="24" class="icon-footer">
+							<svg width="24px" height="24px" class="icon-footer">
 								<use href="./images/sprite.svg#icon-subscribe"></use>
 							</svg>
 						</button>
 					</form>
 				</div>
 			</div>
+			<p class="copyright">2020 | Developed by GoIT Students</p>
 		</footer>
 
 		<script src="./js/modal.js"></script>
+
+		<!-- Кнопка Отправить Данные в Модалке - отображает данные в консоли -->
 		<script>
 			;(() => {
 				document
@@ -676,6 +661,7 @@
 			})()
 		</script>
 
+		<!-- Кнопка должна быть выключенной, пока не отмечен чекбокс -->
 		<script>
 			const inputs = document.querySelectorAll("input[type=checkbox]")
 			const button = document.querySelector(".button-submit")
@@ -688,6 +674,19 @@
 			}
 
 			inputs.forEach(input => input.addEventListener("change", check))
+		</script>
+
+		<!-- Отступ у body подстраивается под размер Хедера -->
+		<script>
+			console.log(
+				document.querySelector(".page-header").getBoundingClientRect().height,
+			)
+
+			const { height: pageHeaderHeight } = document
+				.querySelector(".page-header")
+				.getBoundingClientRect()
+
+			document.body.style.paddingTop = `${pageHeaderHeight}px`
 		</script>
 	</body>
 </html>
