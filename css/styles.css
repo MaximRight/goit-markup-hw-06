@@ -20,7 +20,10 @@
 	--header-stroke: #ececec;
 	--folio-border: #eeeeee;
 	--icon-color: #afb1b8;
-	--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	--transition-time: 250ms;
+	--transition-function: cubic-bezier(0.4, 0, 0.2, 1);
+	--btn-hover-color: #188ce8;
+	--wedo-back-color: rgba(47, 48, 58, 0.8);
 }
 
 body {
@@ -209,7 +212,7 @@ textarea {
 	letter-spacing: 0.02em;
 	text-decoration: none;
 
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--transition-time) var(--transition-function);
 }
 
 .site-nav .link.current::after {
@@ -283,7 +286,7 @@ opacity: 1;
 	letter-spacing: 0.02em;
 	text-decoration: none;
 
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--transition-time) var(--transition-function);
 }
 
 .contacts-nav.list .link .team-icon {
@@ -368,14 +371,17 @@ opacity: 1;
 	letter-spacing: 0.06em;
 	text-decoration: none;
 
-	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color var(--transition-time) var(--transition-function);
+
+	/* transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 
 	/* cursor: pointer; */
 }
 
 .btn:hover,
 .btn:focus {
-	border: 4px solid white;
+	/* border: 4px solid white; */
+	background-color: var(--btn-hover-color);
 }
 
 /* FEATURES НАШИ ПРЕИМУЩЕСТВА */
@@ -506,7 +512,7 @@ opacity: 1;
 	width: 370px;
 	height: 70px;
 
-	background-color: rgba(47, 48, 58, 0.8);
+	background-color: var(--wedo-back-color);
 }
 
 .images-wedo .title {
@@ -633,8 +639,8 @@ opacity: 1;
 	/* background-color: yellow; */
 	border-radius: 50%;
 
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--transition-time) var(--transition-function),
+		background-color var(--transition-time) var(--transition-function);
 
 	/* а еще делают так, для разных элементов, да и Репета так делал просто даже
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
@@ -648,7 +654,7 @@ opacity: 1;
 }
 
 .team-list .link:hover {
-	color: white;
+	color: var(--white-color);
 	background-color: var(--accent-color);
 }
 
@@ -709,11 +715,11 @@ opacity: 1;
 	/* width: 170px;
   height: 90px; */
 
-	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: border var(--transition-time) var(--transition-function);
 }
 
 .clients-list .team-icon {
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--transition-time) var(--transition-function);
 }
 
 /* .clients-list .item:hover,
@@ -736,9 +742,13 @@ opacity: 1;
 	margin-bottom: 50px;
 }
 
-.buttons .item + .item {
-	margin-left: 8px;
+.buttons .item:not(:last-child) {
+	margin-right: 8px;
 }
+
+/* .buttons .item + .item {
+	margin-left: 8px;
+} */
 
 .buttons .button {
 	padding: 6px 22px;
@@ -760,8 +770,8 @@ opacity: 1;
 
 	cursor: pointer;
 
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--transition-time) var(--transition-function),
+		background-color var(--transition-time) var(--transition-function);
 }
 
 .buttons button:hover,
@@ -829,7 +839,7 @@ opacity: 1;
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 
-	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: box-shadow var(--transition-time) var(--transition-function);
 }
 
 /* Альтернатива, Вариация работы с оформлением флекса
@@ -884,8 +894,8 @@ opacity: 1;
 	background-color: rgba(33, 150, 243, 0.9);
 	opacity: 0;
 
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform var(--transition-time) var(--transition-function),
+		opacity var(--transition-time) var(--transition-function);
 
 	transform: translateY(100%);
 }
@@ -905,8 +915,8 @@ opacity: 1;
 
 	transform: translateY(100%);
 	opacity: 0;
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform var(--transition-time) var(--transition-function),
+		opacity var(--transition-time) var(--transition-function);
 }
 
 .portfolio-links:hover,
@@ -970,7 +980,7 @@ opacity: 1;
 	/* background-color: tomato; */
 	opacity: 1;
 
-	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: opacity var(--transition-time) var(--transition-function);
 }
 
 .backdrop.is-hidden {
@@ -994,7 +1004,7 @@ opacity: 1;
 
 	background-color: white;
 
-	transition: transform 250ms var(--timing-function);
+	transition: transform var(--transition-time) var(--transition-function);
 }
 
 /*       -------АНКЕТА В МОДАЛКЕ!!!!------------ */
@@ -1351,8 +1361,8 @@ opacity: 1;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 
-	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: fill var(--transition-time) var(--transition-function),
+		transform var(--transition-time) var(--transition-function);
 
 	outline: 0px;
 }
@@ -1486,7 +1496,7 @@ opacity: 1;
 	line-height: 1.71;
 	text-decoration: none;
 
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--transition-time) var(--transition-function);
 }
 
 .address .title:hover,
@@ -1545,7 +1555,7 @@ opacity: 1;
 	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.1);
 
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color var(--transition-time) var(--transition-function);
 }
 
 .list-footer .item:nth-child(1) .link {
@@ -1637,10 +1647,13 @@ opacity: 1;
 	line-height: 1.87;
 
 	letter-spacing: 0.06em;
+
+	transition: background-color var(--transition-time) var(--transition-function);
 }
 
 .form-subscribe .button:hover {
-	border: 1px solid var(--white-color);
+	background-color: #188ce8;
+	/* border: 1px solid var(--white-color); */
 }
 
 .icon-footer {
