@@ -427,6 +427,7 @@ opacity: 1;
 	border-radius: 4px;
 }
 .feature-list .item:nth-child(1)::before {
+	/* filter: invert(1); */
 	background-image: url(../images/feature1.svg);
 }
 
