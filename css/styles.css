@@ -1058,27 +1058,11 @@ opacity: 1;
 .input-field {
 	display: inline-block;
 	position: relative;
-	/* flex-direction: column; */
-
-	/* position: relative; */
-	/* align-items: center; */
 
 	width: 448px;
-	/* height: 40px; */
 
-	/* outline: 1px solid blue; */
 	margin-bottom: 10px;
-
-	/* height: 58px; */
 }
-
-/* .form-field:nth-child(1)::before {
-	display: block;
-	content: "";
-	width: 20px;
-	height: 20px;
-	background-color: red;
-} */
 
 .input-field .form-input {
 	height: 40px;
@@ -1102,13 +1086,6 @@ opacity: 1;
 	border: 1px solid rgba(33, 33, 33, 0.7);
 }
 
-/* .input-field .form-label {
-} */
-
-/* .input-field .form-input {
-	width: 100%;
-} */
-
 .test-field {
 	position: relative;
 }
@@ -1121,24 +1098,10 @@ opacity: 1;
 .input-field .icon-form {
 	position: absolute;
 	top: 50%;
-	/* top: 0; */
-	/* left: 0; */
 	left: 12px;
-
-	/* top: 13.33px; */
-	/* left: 12px; */
 
 	transform: translateY(-50%);
 }
-
-/* .input-field .form-label {
-	position: absolute;
-	top: 50%;
-	left: 42px;
-
-	transform: translateY(-50%);
-	transition: transform 250ms var(--timing-function);
-} */
 
 /* НОВЫЙ МЕТОД, который поддерживают не все браузеры! */
 
@@ -1173,10 +1136,6 @@ opacity: 1;
 
 /* -------------------- */
 
-/* .input-field.comment {
-	margin-bottom: 20px;
-} */
-
 .comment-field {
 	display: block;
 	margin-bottom: 20px;
@@ -1185,8 +1144,6 @@ opacity: 1;
 .comment {
 	padding: 12px 16px;
 	width: 448px;
-
-	/* margin-bottom: 20px; */
 
 	font-size: 12px;
 	line-height: 1.16;
@@ -1206,8 +1163,6 @@ opacity: 1;
 }
 
 .comment-field textarea::placeholder {
-	/* font-family: Roboto; */
-	/* font-style: normal; */
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 1.16;
@@ -1687,3 +1642,8 @@ opacity: 1;
 }
 
 /* Experiments */
+
+.test__button {
+	width: 100px;
+	height: 100px;
+}
